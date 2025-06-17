@@ -5,5 +5,3 @@ SELECT
                 ELSE LENGTH
               END),2) AS AVERAGE_LENGTH
 FROM FISH_INFO
-
-
