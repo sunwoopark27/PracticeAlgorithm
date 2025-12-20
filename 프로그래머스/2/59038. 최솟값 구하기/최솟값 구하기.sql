@@ -1,4 +1,3 @@
-SELECT
-    MIN(datetime) datetime
+SELECT MIN(datetime) datetime
 FROM
     animal_ins;
