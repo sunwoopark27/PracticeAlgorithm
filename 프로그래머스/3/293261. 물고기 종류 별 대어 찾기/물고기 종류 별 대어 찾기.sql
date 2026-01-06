@@ -1,5 +1,4 @@
-SELECT
-    A.ID,
+SELECT A.ID,
     B.FISH_NAME,
     A.LENGTH
 FROM FISH_INFO A
@@ -9,5 +8,5 @@ WHERE (A.FISH_TYPE,A.LENGTH) IN
     (SELECT FISH_TYPE, MAX(LENGTH)
      FROM FISH_INFO
      GROUP BY FISH_TYPE
-    )
+    ) # 조건절 (10cm 이하 물고기가 가장 큰 경우는 없다고 했으니 조건에서 제외)
 ORDER BY A.ID
