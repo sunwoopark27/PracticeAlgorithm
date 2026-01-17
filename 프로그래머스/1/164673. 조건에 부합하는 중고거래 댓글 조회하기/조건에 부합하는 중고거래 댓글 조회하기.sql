@@ -1,5 +1,4 @@
-SELECT
-    A.TITLE,
+SELECT A.TITLE,
     B.BOARD_ID,
     B.REPLY_ID,
     B.WRITER_ID,
