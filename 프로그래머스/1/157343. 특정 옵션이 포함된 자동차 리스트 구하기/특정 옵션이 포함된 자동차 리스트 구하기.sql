@@ -1,5 +1,4 @@
-SELECT
-    CAR_ID,
+SELECT CAR_ID,
     CAR_TYPE,
     DAILY_FEE,
     OPTIONS
