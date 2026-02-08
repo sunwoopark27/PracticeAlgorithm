@@ -1,5 +1,4 @@
-SELECT
-    PT_NAME,
+SELECT PT_NAME,
     PT_NO,
     GEND_CD,
     AGE,
