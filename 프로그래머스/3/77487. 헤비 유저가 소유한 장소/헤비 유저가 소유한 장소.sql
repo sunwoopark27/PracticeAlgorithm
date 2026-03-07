@@ -1,5 +1,4 @@
-SELECT
-    ID,
+SELECT ID,
     NAME,
     HOST_ID
 FROM
