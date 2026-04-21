@@ -1,4 +1,3 @@
--- 코드를 작성해주세요
 WITH FRONT AS (
     SELECT SUM(CODE) AS FC FROM SKILLCODES WHERE CATEGORY = 'Front End'
 ),
