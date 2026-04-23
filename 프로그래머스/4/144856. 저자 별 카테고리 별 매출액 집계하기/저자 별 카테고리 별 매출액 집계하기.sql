@@ -1,4 +1,3 @@
--- 코드를 입력하세요
 select b.author_id, a.author_name, b.category, sum(b.price * s.sales) 'total_sales'
 from book b
     right join book_sales s
