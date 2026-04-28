@@ -6,14 +6,10 @@ WITH RECURSIVE hours AS (
     WHERE hour < 23
 )
 
-SELECT h.hour AS HOUR,
+SELECT H.hour AS HOUR,
     COUNT(a.ANIMAL_ID) AS COUNT
-FROM
-    hours h
-LEFT JOIN
-    ANIMAL_OUTS a
-    ON HOUR(a.DATETIME) = h.hour
-GROUP BY
-    h.hour
-ORDER BY
-    h.hour
+FROM HOURS H
+LEFT JOIN ANIMAL_OUTS A
+    ON HOUR(A.DATETIME) = H.hour
+GROUP BY H.hour
+ORDER BY H.hour
