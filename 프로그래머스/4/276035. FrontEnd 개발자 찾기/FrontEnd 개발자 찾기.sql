@@ -1,5 +1,4 @@
-SELECT
-    ID,
+SELECT ID,
     EMAIL,
     FIRST_NAME,
     LAST_NAME
