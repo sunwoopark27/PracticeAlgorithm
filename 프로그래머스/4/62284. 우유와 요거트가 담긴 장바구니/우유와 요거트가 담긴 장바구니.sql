@@ -1,14 +1,14 @@
-with milk as 
+WITH milk AS 
 (
-select cart_id
-from CART_PRODUCTS 
-where name = 'milk'
+SELECT cart_id
+FROM CART_PRODUCTS 
+WHERE name = 'milk'
 )
 
-select cart_id
-from CART_PRODUCTS 
-where cart_id in (
-select cart_id
-from milk
-) and name='yogurt'
-order by cart_id
+SELECT cart_id
+FROM CART_PRODUCTS 
+WHERE cart_id IN (
+SELECT cart_id
+FROM milk
+) AND name='yogurt'
+ORDER BY cart_id
