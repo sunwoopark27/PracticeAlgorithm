@@ -1,10 +1,10 @@
-SELECT e.EMP_NO
-     , e.EMP_NAME
-     , a.GRADE
+SELECT E.EMP_NO
+     , E.EMP_NAME
+     , A.GRADE
      , CASE
-        WHEN a.GRADE = 'S' THEN e.SAL * 0.2
-        WHEN a.GRADE = 'A' THEN e.SAL * 0.15
-        WHEN a.GRADE = 'B' THEN e.SAL * 0.1
+        WHEN A.GRADE = 'S' THEN E.SAL * 0.2
+        WHEN A.GRADE = 'A' THEN E.SAL * 0.15
+        WHEN A.GRADE = 'B' THEN E.SAL * 0.1
         ELSE 0
         END AS BONUS
 FROM (SELECT EMP_NO         
@@ -15,7 +15,7 @@ FROM (SELECT EMP_NO
             ELSE 'C'
             END AS GRADE
      FROM HR_GRADE
-     GROUP BY EMP_NO) a
+     GROUP BY EMP_NO) A
         JOIN
-     HR_EMPLOYEES e ON a.EMP_NO = e.EMP_NO
+     HR_EMPLOYEES E ON A.EMP_NO = E.EMP_NO
 ORDER BY EMP_NO
