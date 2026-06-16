@@ -6,4 +6,4 @@ LEFT JOIN used_goods_user u
     ON b.writer_id = u.user_id
 GROUP BY b.writer_id
 HAVING COUNT(board_id) >= 3
-ORDER BY u.user_id DESC
+ORDER BY u.user_id DESC;
