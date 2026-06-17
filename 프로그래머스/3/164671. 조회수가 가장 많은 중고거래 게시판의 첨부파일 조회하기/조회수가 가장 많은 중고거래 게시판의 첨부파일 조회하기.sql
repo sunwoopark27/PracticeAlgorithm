@@ -7,6 +7,5 @@ SELECT CONCAT('/home/grep/src/',
 FROM USED_GOODS_FILE
 WHERE BOARD_ID IN (
                     SELECT FIRST_VALUE(BOARD_ID) OVER (ORDER BY VIEWS DESC) 
-                    FROM USED_GOODS_BOARD
-    )
+                    FROM USED_GOODS_BOARD)
 ORDER BY FILE_ID DESC
