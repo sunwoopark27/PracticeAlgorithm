@@ -9,4 +9,4 @@ with summation as (
     order by tot desc
 )
 
-select flavor from summation limit 3;
+select flavor from summation limit 3
