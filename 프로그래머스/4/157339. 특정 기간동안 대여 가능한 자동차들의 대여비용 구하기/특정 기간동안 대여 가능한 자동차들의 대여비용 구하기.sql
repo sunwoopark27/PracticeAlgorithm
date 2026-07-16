@@ -1,4 +1,3 @@
--- 코드를 입력하세요
 WITH CAR_INFO AS (
     SELECT
         car.CAR_ID,
